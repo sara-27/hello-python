@@ -6,4 +6,6 @@ app = Flask(__name__)
 def index():
     return 'Hello world!'
 
-app.run()
+app.debug = True
+
+app.run(port=80)
